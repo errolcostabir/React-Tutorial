@@ -7,8 +7,9 @@ import AddTodo from './AddTodo';
 class App extends Component {
 state={
   todos:[
-    {id:1,item:'buy Chocolate'},
-    {id:2,item: 'play football'}
+    {id:1,item:'Buy Chocolates Using Ralph\'s Amazon Gift Card'},
+    {id:2,item: 'Learn React'},
+    {id:3,item: 'Exercise'}
 
   ]
 }
@@ -31,7 +32,7 @@ this.setState({
   render(){
   return (
     <div className="todo-app container">
-      <h1 className="center blue-text">Todo's</h1>
+      <h1 className="center blue-text">Your Tasks For The Day</h1>
       <Todos 
       todos={this.state.todos}
       deleteTodo={this.deleteTodo}
